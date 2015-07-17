@@ -8,9 +8,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest
-{
-    static int count = 0;
+public class AppTest {
 
     /**
      * Rigourous Test :-)
@@ -23,7 +21,7 @@ public class AppTest
 
     @org.junit.Test
     public void testApp2() {
-        count++;
+        int count = Integer.parseInt(System.getProperty("surefire.rerunFailingTestsCount"));
         System.out.println("this should always fail if count is less then 4: " + count);
         if (--count < 4) {
             assertTrue(false);
