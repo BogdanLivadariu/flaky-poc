@@ -1,9 +1,6 @@
 package flaky;
 
-import static org.junit.Assert.*;
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Unit test for simple App.
@@ -29,6 +26,7 @@ public class AppTest {
             assertTrue(true);
         }
     }
+
     @org.junit.Test
     public void testApp3() {
         int count = Integer.parseInt(System.getProperty("surefire.rerunFailingTestsCount"));
