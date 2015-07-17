@@ -2,9 +2,13 @@ package flaky;
 
 import static org.junit.Assert.assertTrue;
 
+import org.jenkinsci.testinprogress.runner.ProgressSuite;
+import org.junit.runner.RunWith;
+
 /**
  * Unit test for simple App.
  */
+@RunWith(ProgressSuite.class)
 public class AppTest {
 
     /**
