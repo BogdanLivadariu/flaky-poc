@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 /**
  * Unit test for simple App.
  */
-@RunWith(ProgressSuite.class)
+
 public class AppTest {
 
     /**
