@@ -10,6 +10,7 @@ import junit.framework.TestSuite;
  */
 public class AppTest
 {
+    static int count = 0;
 
     /**
      * Rigourous Test :-)
@@ -22,7 +23,12 @@ public class AppTest
 
     @org.junit.Test
     public void testApp2() {
-        System.out.println("this should always fail");
-        assertTrue(false);
+        count++;
+        System.out.println("this should always fail if count is less then 4: " + count);
+        if (--count < 4) {
+            assertTrue(false);
+        } else {
+            assertTrue(true);
+        }
     }
 }
