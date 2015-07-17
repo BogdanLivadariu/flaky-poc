@@ -29,4 +29,14 @@ public class AppTest {
             assertTrue(true);
         }
     }
+    @org.junit.Test
+    public void testApp3() {
+        int count = Integer.parseInt(System.getProperty("surefire.rerunFailingTestsCount"));
+        System.out.println("this should always fail if count is less then 6: " + count);
+        if (--count < 6) {
+            assertTrue(false);
+        } else {
+            assertTrue(true);
+        }
+    }
 }
