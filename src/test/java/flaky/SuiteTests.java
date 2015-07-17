@@ -9,5 +9,5 @@ import org.junit.runners.Suite.SuiteClasses;
 AppTest.class
 })
 public class SuiteTests {
-
+   // stupid me
 }
